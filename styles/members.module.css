@@ -1,0 +1,11 @@
+.table {
+  text-align: center;
+  margin-left: 0.5rem;
+  width: 350px;
+  border-collapse: collapse;
+}
+
+.table * {
+  border: 1px solid black;
+  padding: 0.33rem;
+}

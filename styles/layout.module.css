@@ -1,0 +1,12 @@
+.heading {
+  margin-left: 0.1rem;
+  color: dodgerblue;
+  text-decoration: none;
+}
+.links {
+  list-style: none;
+  display: flex;
+  width: 250px;
+  margin-left: -1.5rem;
+  justify-content: space-between;
+}
