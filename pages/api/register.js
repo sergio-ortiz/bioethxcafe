@@ -8,5 +8,5 @@ export default async function handler(req, res) {
     },
   });
 
-  res.redirect(302, "/");
+  res.redirect(302, "/members");
 }
