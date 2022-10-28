@@ -1,17 +1,18 @@
 import Layout from "/components/layout";
+import styles from "/styles/registration.module.css";
 
 const HomePage = () => (
   <Layout>
-    <form action="/api/register" method="post">
+    <form className={styles.form} action="/api/register" method="post">
       <label>
-        First Name: <input type="text" name="firstName" />
+        First Name:{" "}
+        <input className={styles.input} type="text" name="firstName" required />
       </label>
-      <br />
       <label>
-        Last Name: <input type="text" name="lastName" />
+        Last Name:{" "}
+        <input className={styles.input} type="text" name="lastName" required />
       </label>
-      <br />
-      <input type="submit" value="submit" />
+      <input className={styles.submit} type="submit" value="submit" />
     </form>
   </Layout>
 );

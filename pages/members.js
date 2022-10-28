@@ -1,5 +1,6 @@
 import prisma from "/lib/prisma";
 import Layout from "/components/layout";
+import styles from "/styles/members.module.css";
 
 export async function getServerSideProps() {
   const members = await prisma.Member.findMany();
@@ -8,7 +9,7 @@ export async function getServerSideProps() {
 
 const MembersPage = (props) => (
   <Layout>
-    <table>
+    <table className={styles.table}>
       <thead>
         <tr>
           <th>First</th>
@@ -20,7 +21,8 @@ const MembersPage = (props) => (
           .sort((a, b) => b.id - a.id)
           .map((member) => (
             <tr key={member.id}>
-              <td>{member.firstName}</td> <td>{member.lastName}</td>
+              <td>{member.firstName}</td>
+              <td>{member.lastName}</td>
             </tr>
           ))}
       </tbody>
