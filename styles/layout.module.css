@@ -6,7 +6,7 @@
 .links {
   list-style: none;
   display: flex;
-  width: 150px;
+  width: 250px;
   margin-left: -1.5rem;
   justify-content: space-between;
 }
